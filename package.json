@@ -1,0 +1,16 @@
+{
+  "name": "calculator-the-game-solver",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The solver of Calculator: The Game.",
+  "main": "solver.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Ticshot@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^4.0.0"
+  }
+}
