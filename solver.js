@@ -233,7 +233,13 @@ function solveWithAffector(initial, goal, actions, moves, portal) {
   });
 }
 
-module.exports = function solve(initial, goal, actions, moves, portal) {
+module.exports = function solve({
+  initial = 0,
+  goal,
+  actions,
+  moves,
+  portal = null
+}) {
   actions = normalizeActions(actions);
   const hasModifier = actions.some(action => {
     return action.type === 'modifier' || action.type === 'store';
